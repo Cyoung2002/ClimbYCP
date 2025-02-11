@@ -9,10 +9,22 @@ body {
 }
 
 header {
-    background-color: #44ae33;
+    background: url(https://raw.githubusercontent.com/Cyoung2002/ClimbYCP/refs/heads/main/Rock%20Climbing%20Class_028.jpg) 
+                no-repeat center center/cover;
     color: white;
-    padding: 20px;
+    padding: 60px 20px;
     text-align: center;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160%;
+    background: rgba(124, 205, 77, 0.9); /* Dark overlay */
+    z-index: -100;
 }
 
 nav ul {
@@ -29,6 +41,12 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+
+nav ul li a:hover {
+    color: #44ae33;
+    text-decoration: underline;
 }
 
 section {
